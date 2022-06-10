@@ -1,0 +1,9 @@
+{
+  "scripts": {
+ 
+    "cypress:open": "cypress open" ,
+    "runtest": "npm run test"
+ 
+    
+  }
+}  
