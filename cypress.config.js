@@ -1,10 +1,8 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
-  projectId: "6pynrm",
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-  },
-});
+  chromeWebSecurity: false,
+  pageLoadTimeout: 20000
+  }
+})

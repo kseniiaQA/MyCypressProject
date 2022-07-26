@@ -1,13 +1,8 @@
+Cypress.Commands.add('googleSearch', () => {
+    cy.visit("https://www.google.com/")
+    cy.get('input.gLFyf.gsfi').type('https://crtweb.ru').type('{enter}')
 
 
-
-Cypress.Commands.add('logInStandarsUser', () => {
-
-    cy.visit('https://demo.nopcommerce.com/')
-    cy.get('a.ico-login').click()
-    cy.get('#Email').type('kshamtova22@mail.ru')
-    cy.get('#Password').type('raopeng21')
-    cy.get('button.button-1.login-button').click()
 })
 
  
