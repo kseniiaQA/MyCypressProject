@@ -10,8 +10,9 @@ describe('CRTWEB websites', () => {
 
   it('checks contacts', () => {
     cy.visit('https://crtweb.ru/')
+    cy.wait(3000) 
     cy.get('a.tn-atom.reverse.modified').eq(0).click()
-
+    cy.wait(3000) 
     cy.get('a').contains('Контакты').click()
     cy.get('a.tn-atom').contains('+7 499 113-68-89')
     cy.get('a.tn-atom').contains('sales@crtweb.ru')
